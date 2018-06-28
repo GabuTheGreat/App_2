@@ -1,8 +1,16 @@
+#check if packages are installed
+packages <- c("Rfacebook", "tm", "RColorBrewer", "wordcloud")
+if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
+  install.packages(setdiff(packages, rownames(installed.packages())))  
+}
+
 #Load the neccessary libraries.
 library(Rfacebook)
 library(tm)
 library(RColorBrewer)
 library(wordcloud)
+
+
 
 #Load "Facebook Credentials"
 load("fb_oauth")
