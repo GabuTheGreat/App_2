@@ -9,6 +9,8 @@ library(Rfacebook)
 library(tm)
 library(RColorBrewer)
 library(wordcloud)
+library(MASS)
+
 
 
 
